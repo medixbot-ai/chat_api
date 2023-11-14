@@ -23,7 +23,7 @@ def document_loaders(file_path):
                   ".csv":"PandasCSVReader",
                   ".xlsx":"PandasExcelReader",
                   ".docx":"DocxReader",
-               }
+                  }
 
     file_name, file_extension = os.path.splitext(file_path)
     extra_info={'file_name': file_name+file_extension}
